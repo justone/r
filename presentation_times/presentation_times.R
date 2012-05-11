@@ -35,7 +35,7 @@ times.melted$Date <- as.POSIXct(times.melted$Date)
 # just the teams
 times.teams <- times.melted[times.melted$Team != 'Total',]
 # order the factor
-times.teams$Team <- factor(times.teams$Team, levels=c('Intro','Lulu','Blinky','Cheezo','Rosco','Fizbo','Skiddle','Checker','Twinkle','Bonker','Finish'))
+times.teams$Team <- factor(times.teams$Team, levels=c('Intro','Lulu','Blinky','Rosco','Fizbo','Skiddle','Checker','Twinkle','Bonker','Finish'))
 # filter out the NAs
 times.teams.clean <- times.teams[!is.na(times.teams$Time),]
 
